@@ -1,0 +1,26 @@
+<a href="/teacher/option" class="btn btn-info" style="margin-top:5px;">Back</a>
+<h4>Add Student-Result</h4>
+<form method="POST" class="addStu" autocomplete="off">
+  <h5 style="text-align:center;color: red;">
+    <%= error %>
+  </h5>
+  <div class="mb-3">
+    <label class="form-label">Roll No : </label>
+    <input type="number" name="roll" required class="form-control">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Name : </label>
+    <input type="text" name="name" required class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Date of Birth : </label>
+    <input type="date" name="dob" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Score : </label>
+    <input type="number" name="score" required class="form-control">
+  </div>
+  <button type="submit" class="btn btn-success">Add</button>
+  <a href="/teacher/viewall" class="btn btn-primary">View All</a>
+</form>

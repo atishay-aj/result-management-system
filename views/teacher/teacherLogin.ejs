@@ -1,0 +1,27 @@
+<a href="/" class="btn btn-info" style="margin-top:5px;">Back</a>
+<h3>Teacher Login</h3>
+<h5 style="text-align:center;color: red;">
+  <%= error %>
+</h5>
+<div class="teachLogClass">
+  <form method="POST" class="teachFormClass">
+    <div class="mb-3">
+      <label class="form-label">Password : </label>
+      <input type="password" name="password" class="form-control" id="pass">
+      <br>
+      <input type="checkbox" style="width: 30px;" onclick="myFunction()">Show Password
+      <br>
+    </div>
+    <a><button type="submit" class="btn btn-primary">Submit</button></a>
+  </form>
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("pass");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>
