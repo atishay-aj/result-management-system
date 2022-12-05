@@ -2,7 +2,7 @@ const express = require("express");
 //express app
 const app = express();
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const mongoose = require('mongoose'); //to connect to mongodb
 
 //connect to mongodb and listen to requests
